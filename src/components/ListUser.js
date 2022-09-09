@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { ActivityRow } from "./ActivityRow";
 import { MessageCard } from "./MessageCard";
-import { apiUrl } from "./../utils";
-import { sortBydate } from "./../utils";
+import { apiUrl, sortBydate } from "./../utils";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFolderOpen } from '@fortawesome/free-solid-svg-icons'
 import NameLogo from "./NameLogo";
+
 
 export const NameList = () => {
   const [list, setList] = useState([]);
@@ -32,17 +32,15 @@ export const NameList = () => {
             <input type="radio" checked={index <= activeRow ? true : false} className="select_btn"/>
             <NameLogo title={l.author} />
           </div>
-          {l.type === "comment" ? (
-            <MessageCard details={l} />
-          ) : (
-            <ActivityRow details={l} />
-          )}
+          {l.type === "comment" ? (<MessageCard details={l} />) : (<ActivityRow details={l} />)}
         </div>
       ))}
      
       <div className="showmore" onClick={() => setShowAll(!showAll)}> 
-      <FontAwesomeIcon icon={faFolderOpen} className="showmore_icon" />
-      <div className="showmore_btn">{showAll? "Show less events" : `Show ${sortedList.length - firstSixData.length} more events`}</div>
+       <FontAwesomeIcon icon={faFolderOpen} className="showmore_icon" />
+        <div className="showmore_btn">
+         {showAll? "Show less events" : `Show ${sortedList.length - firstSixData.length} more events`}
+       </div>
       </div>
     </div>
   );
