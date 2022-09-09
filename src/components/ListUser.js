@@ -3,6 +3,8 @@ import { ActivityRow } from "./ActivityRow";
 import { MessageCard } from "./MessageCard";
 import { apiUrl } from "./../utils";
 import { sortBydate } from "./../utils";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFolderOpen } from '@fortawesome/free-solid-svg-icons'
 import NameLogo from "./NameLogo";
 
 export const NameList = () => {
@@ -37,9 +39,11 @@ export const NameList = () => {
           )}
         </div>
       ))}
-      <h2 className="showmore_btn" onClick={() => setShowAll(!showAll)}>
-        {showAll? "Show less events" : `Show ${sortedList.length - firstSixData.length} more events`}
-      </h2>
+     
+      <div className="showmore" onClick={() => setShowAll(!showAll)}> 
+      <FontAwesomeIcon icon={faFolderOpen} className="showmore_icon" />
+      <div className="showmore_btn">{showAll? "Show less events" : `Show ${sortedList.length - firstSixData.length} more events`}</div>
+      </div>
     </div>
   );
 };

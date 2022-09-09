@@ -93,9 +93,9 @@ margin-top: -20px;
   font-size: 18px;
   font-weight: 400;
   color: rgb(189, 9, 189);
-  margin: 40px 0;
+  margin: 30px 0;
   cursor: pointer;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .select{
@@ -125,4 +125,13 @@ margin-top: -20px;
   height: 20px;
   border-radius: 50%;
   display: inline-block;
+}
+
+.showmore_icon{
+  color: rgb(189, 9, 189);
+}
+
+.showmore{
+  display: flex;
+  align-items: center;
 }
