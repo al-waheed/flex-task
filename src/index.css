@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +10,7 @@
   border: 1px solid rgb(189, 181, 181);
   border-radius: 10px;
   padding: 20px 40px 0 40px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   margin: auto;
 }
 
@@ -29,13 +29,13 @@
   margin-bottom: 30px;
 }
 
-.date{
+.date {
   color: rgb(189, 181, 181);
   font-size: 16px;
   margin-left: 13px;
 }
 
-.text_bold{
+.text_bold {
   font-size: 16px;
   font-weight: 400;
   margin-top: -20px;
@@ -44,13 +44,13 @@
   color: rgb(36, 28, 28);
 }
 
-.text_bold-2{
+.text_bold-2 {
   font-size: 16px;
   font-weight: 400;
   color: rgb(36, 28, 28);
 }
 
-.text_bold-3{
+.text_bold-3 {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 15px;
@@ -58,18 +58,18 @@
   color: rgb(36, 28, 28);
 }
 
-.text{
-margin-bottom: 25px;
-margin-top: -20px;
+.text {
+  margin-bottom: 25px;
+  margin-top: -20px;
 }
 .text_light {
   font-size: 16px;
-  margin: 0px  3px;
+  margin: 0px 3px;
   font-weight: 100;
   color: rgb(189, 181, 181);
 }
 
-.message{
+.message {
   border-bottom: 1px solid rgb(189, 181, 181);
   margin-bottom: 20px;
 }
@@ -77,9 +77,9 @@ margin-top: -20px;
 .message_box {
   width: 700px;
   font-size: 13px;
-  color:rgb(189, 181, 181);
+  color: rgb(189, 181, 181);
 }
-.name-logo{
+.name-logo {
   padding: 5px 9px;
   font-size: 14px;
   background: rgb(189, 9, 189);
@@ -89,26 +89,25 @@ margin-top: -20px;
   display: inline-block;
 }
 
-.showmore_btn{
-  font-size: 18px;
+.showmore_btn {
+  font-size: 16px;
   font-weight: 400;
   color: rgb(189, 9, 189);
-  margin: 30px 0;
-  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 40px;
   margin-left: 30px;
 }
 
-.select{
+.select {
   margin-top: 20px;
 }
 
-.select_btn{
+.select_btn {
   margin-right: 15px;
 }
 
-.red_dot{
+.red_dot {
   background-color: red;
-  margin-left: -4px;
   margin-right: 3px;
   margin-bottom: 3px;
   width: 8px;
@@ -117,7 +116,7 @@ margin-top: -20px;
   display: inline-block;
 }
 
-.gray_dot{
+.gray_dot {
   background-color: rgb(189, 181, 181);
   margin-right: 7px;
   margin-bottom: -4px;
@@ -127,11 +126,13 @@ margin-top: -20px;
   display: inline-block;
 }
 
-.showmore_icon{
+.showmore_icon {
   color: rgb(189, 9, 189);
+  margin-top: -20px;
 }
 
-.showmore{
+.showmore {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
